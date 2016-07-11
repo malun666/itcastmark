@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>学生任务手册-生成器</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/animate.css">
+    <script src="lib/jquery.min.js"></script>
+    <style>
+      .result span {
+        margin: 2px 5px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="well">
+      <h1>传智.MarkDown网页生成系统</h1>
+      <p>请选择文件夹，然后自动生成相关网页</p>
+      <input type="button" class="btn btn-success" id="btnOpenDir" value="选择生成的文件夹">
+      <input type="button" class="btn btn-danger" value="清除" id="btnClear">
+     </div>
+     <table class="result table">
+       
+     </table>
+
+     <div class="footer bg-info">
+       <small>made by node<span class="glyphicon glyphicon-copyright-mark"></span> 技术支持邮箱： malun@itcast.cn</small>
+     </div>
+
+     <script>
+       // const { remote } = require('electron');
+       require('./lib/index')();
+
+     </script>
+
+    <!-- 链接: http://pan.baidu.com/s/1jHEbzi2 密码: aciy -->
+  </body>
+</html>
