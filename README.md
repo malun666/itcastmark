@@ -9,8 +9,9 @@ itcastmark 是一个将markdown文件转换成html网站的可以用Electron打�
 1. 创建存放app的文件夹，例如  `mkdir /home/malun/itcastmark`
 2. 打开终端到 上面创建的目录。 `cd /home/malun/itcastmark`
 3. `git clone git@github.com:malun666/itcastmark.git`
-4. 确认已经安装electron-prebuilt `npm install -g electron-prebuilt`
-5. `electron itcastmark`
+4. `cd itcastmark && npm i`
+5. 确认已经安装electron-prebuilt `npm install -g electron-prebuilt`
+6. `electron itcastmark`
 
 ### 下载Electron安装包使用
 1. 下载Electron包,[淘宝的镜像](https://npm.taobao.org/mirrors/electron)   下个最新版本就行。
@@ -19,7 +20,9 @@ itcastmark 是一个将markdown文件转换成html网站的可以用Electron打�
 
 3. `git clone git@github.com:malun666/itcastmark.git`
 
-4. 把itcastmark目录改名为app，并且 拷贝到Electron的 resources目录下。目录的结构为：    
+4. `cd itcastmark && npm i`
+
+5. 把itcastmark目录改名为app，并且 拷贝到Electron的 resources目录下。目录的结构为：    
 
 On macOS:
 
@@ -56,7 +59,7 @@ electron/resources/app
 
 - write by  malun666@126.com
 
-如有建议或意见，请在issue提问或邮件
+- 如有建议或意见，请在issue提问或邮件
 
 ## License
 
