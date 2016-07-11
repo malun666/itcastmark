@@ -3,96 +3,44 @@ itcastmark
 
 itcastmark 是一个将markdown文件转换成html网站的可以用Electron打包成全平台的app工具.
 
+## Install
 
-## Install 
+### 命令行安装使用
+1. 创建存放app的文件夹，例如  `mkdir /home/malun/itcastmark`
+2. 打开终端到 上面创建的目录。 `cd /home/malun/itcastmark`
+3. `git clone git@github.com:malun666/itcastmark.git`
+4. 确认已经安装electron-prebuilt `npm install -g electron-prebuilt`
+5. `electron itcastmark`
 
-	
+### 下载Electron安装包使用
+1. 下载Electron包,[淘宝的镜像](https://npm.taobao.org/mirrors/electron)   下个最新版本就行。
+
+2. `mkdir 存放app的目录  &&  cd 存放app的目录`
+
+3. `git clone git@github.com:malun666/itcastmark.git`
+
+4. 把itcastmark目录改名为app，并且 拷贝到Electron的 resources目录下。目录的结构为：    
+
+On macOS:
+
+```plaintext
+electron/Electron.app/Contents/Resources/app/
+├── package.json
+├── main.js
+└── index.html
+```
+On Windows and Linux:
+
+```plaintext
+electron/resources/app
+├── package.json
+├── main.js
+└── index.html
+```
 ## Usage
-
-常见用法:
-
-```shell
-itcastmd -f sample.md -o
-```
-这个版本的命令比较简单，只有一个`-f`参数，如果没有填写，默认使用`README.md`
-
-```
-  Options:(其他参数)
-    -h, --help             output usage information
-    -V, --version          output the version number
-    -f, --file [filename]  default is README.md 
-		-o, --open             open in browser
-    -v, --verbose          打印详细日志
-```
-
-
-	
-## Api Usages
-
-示例说明
-
-```
-var is_open = true;
-var markd_config = {
-	debug: false
-}
-//函数可以返回当前正在执行的项目路径
-var pwd = process.cwd()  
-
-var source_file_name = pwd + '/' + source_file
-var file_name = source_file_name.split('/').pop();;
-var _file_name = file_name.split('.')[0];
-
-var dest_file_path = pwd + '/preview/' + _file_name + '.html';
-
-console.log('pwd=' + pwd);
-console.log('source_file_name=' + source_file_name);
-console.log('dest_file_path=' + dest_file_path);
-
-require('../index')(pwd, source_file_name, dest_file_path, is_open, markd_config);
-
-```
-
-参数说明
-
-- pwd是存放preview的位置
-- source_file 要编译的mardown文件
-- dest_file_path 生成的html完整路径和文件名
-- is_open 是否在编译后使用浏览器中打开html
-- markd_config 编译md的选项（具体见 https://github.com/chjj/marked ）
-
-## Basic
-
-current path
-
-	var pwd = process.cwd()
-
-
-file path 
-
-	__dirname
-	
-	
-use shelljs judge dir is
-
-	if (test('-d', previewPath)) { 
-		/* do something with dir */ 
-		mkdir('-p', previewPath);
-	};
-	
-http://documentup.com/arturadib/shelljs
-
-- '-b', 'path': true if path is a block device
-- '-c', 'path': true if path is a character device
-- '-d', 'path': true if path is a directory
-- '-e', 'path': true if path exists
-- '-f', 'path': true if path is a regular file
-- '-L', 'path': true if path is a symboilc link
-- '-p', 'path': true if path is a pipe (FIFO)
-- '-S', 'path': true if path is a socket
-
-template for compile use [handlebars](http://handlebarsjs.com/)
-
+1. 点击 选择文件夹按钮
+2. 选取 md文件所在的目录
+3. 打开目录查看是否有preview目录，ok
 
 ## Contributing
 
@@ -102,14 +50,7 @@ template for compile use [handlebars](http://handlebarsjs.com/)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## 推荐
 
-- [mac-dev-setup](http://aaaaaashu.gitbooks.io/mac-dev-setup/content/index.html)
-- [How To Build A CLI Tool With Node.js And PhantomJS](http://www.smashingmagazine.com/2014/02/12/build-cli-tool-nodejs-phantomjs/)
-
-## 版本历史
-
-- v0.1.0 初始化版本
 
 ## 欢迎fork和反馈
 
