@@ -5,7 +5,7 @@ itcastmark 是一个将markdown文件转换成html网站的可以用Electron打�
 
 ## Install
 
-### 命令行安装使用
+### 方式1：命令行安装使用
 1. 创建存放app的文件夹，例如  `mkdir /home/malun/itcastmark`
 2. 打开终端到 上面创建的目录。 `cd /home/malun/itcastmark`
 3. `git clone git@github.com:malun666/itcastmark.git`
@@ -13,7 +13,7 @@ itcastmark 是一个将markdown文件转换成html网站的可以用Electron打�
 5. 确认已经安装electron-prebuilt `npm install -g electron-prebuilt`
 6. `electron itcastmark`
 
-### 下载Electron安装包使用
+### 方式2：下载Electron安装包使用**推荐**
 1. 下载Electron包,[淘宝的镜像](https://npm.taobao.org/mirrors/electron)   下个最新版本就行。
 
 2. `mkdir 存放app的目录  &&  cd 存放app的目录`
