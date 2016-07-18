@@ -1,6 +1,6 @@
 {
   "name": "itcastmd",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a npm wrapper for convert markdown to html by itcast fe",
   "keywords": [
     "doc",
@@ -14,7 +14,7 @@
   "main": "main.js",
   "scripts": {
     "start": "",
-    "test": "/volumes/dragon/macsoft/electron-v1.2.5-darwin-x64/electron.app/contents/macos/Electron /volumes/work/gitdata/itcastmark"
+    "test": "/Users/fly/pers/soft/electron-v1.2.5-darwin-x64/itcastmark.app/contents/macos/Electron /Users/fly/pers/work/gitdata/ItcastMark"
   },
   "preferGlobal": "true",
   "bin": {
@@ -35,9 +35,9 @@
     "handlebars": "^2.0.0",
     "marked": "^0.3.2",
     "object-assign": "^1.0.0",
+    "open": "0.0.5",
     "shelljs": "^0.3.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/malun666/itcastmark"
 }
